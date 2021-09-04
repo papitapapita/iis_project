@@ -40,15 +40,20 @@ a {
     var(--deep) 50%,
     var(--slate) 100%
   );
+  box-shadow: 0rem 0rem 5rem 0.5rem rgba(128, 128, 128, 0.2);
+  color: #002927;
   display: flex;
   height: 15vh;
+  justify-content: space-between;
   padding: 3rem;
   width: 100%;
-  box-shadow: 0rem 0rem 5rem 0.5rem rgba(128, 128, 128, 0.2);
 }
 
 .header__imagen-div {
-  width: 50%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 30%;
 }
 
 .image-container {
@@ -57,10 +62,27 @@ a {
   justify-content: center;
 }
 
-.image-container--header {
-  max-width: 50%;
+.header-icon {
+  text-shadow: 0.5rem 0.5rem 0.2rem rgba(128, 128, 128, 0.3);
+  color: #002927;
+  font-size: 7rem;
+}
+
+.header__title {
+  font-size: 4rem;
+  margin-left: 1rem;
+  font-family: "Architects Daughter", cursive;
+  text-shadow: 0.5rem 0.5rem 0.2rem rgba(128, 128, 128, 0.3);
 }
 
 .menu {
-  width: 50%;
+  font-size: 1.6rem;
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 30%;
+}
+
+.menu__lista {
+  display: flex;
 }
