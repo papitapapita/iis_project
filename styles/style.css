@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  --charcoal: #2a3d45;
+  --deep: #466572;
+  --pewter: #81a3b1;
+  --baby: #f7cdca;
+  --misty: #fae1df;
+  --lavender: #fceeed;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background: rgb(247, 205, 202);
+  background: linear-gradient(
+    0deg,
+    rgba(247, 205, 202, 1) 0%,
+    rgba(250, 225, 223, 1) 50%,
+    rgba(252, 238, 237, 1) 100%
+  );
+  min-height: 100vh;
+}
+
+a {
+  color: #fff;
+}
+
+.header {
+  height: 15vh;
+}
