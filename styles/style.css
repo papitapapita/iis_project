@@ -30,10 +30,11 @@ a {
 
 .header {
   display: flex;
-  height: 15vh;
+  height: 12vh;
   justify-content: space-between;
   padding: 3rem;
   width: 100%;
+  padding-bottom: 0;
 }
 
 .header__imagen-div {
@@ -59,7 +60,8 @@ a {
 .menu-plegable__text,
 .menu__link,
 .menu-plegable__link,
-.buscador__titulo {
+.buscador__titulo,
+.buscador__input::placeholder {
   text-shadow: 0 0 0.7rem #ff6ec7, 0 0 1rem #ff6ec7, 0 0 2.1rem #ff6ec7,
     0 0 4.2rem #ff22ff, 0 0 8.2rem #ff22ff, 0 0 9.2rem #ff22ff;
 }
@@ -157,5 +159,30 @@ a {
 }
 
 .buscador__titulo {
-  font-size: 5rem;
+  font-size: 4rem;
+}
+
+.buscador__input {
+  margin-top: 5rem;
+  background-color: transparent;
+  border: 0.3rem solid white;
+  border-radius: 3.5rem;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  padding: 2rem 3rem;
+  width: 80%;
+  text-align: start;
+  box-shadow: inset 0rem 0rem 1.7rem #ff6ec7, 0rem 0rem 0.7rem #ff6ec7,
+    0 0 1rem #ff6ec7, 0 0 2.1rem #ff6ec7, 0 0 1.7rem #ff22ff,
+    inset 0 0 1.7rem #ff22ff;
+}
+
+.buscador__input::placeholder {
+  color: white;
+  font-weight: 300;
+}
+
+.buscador__input:focus-visible {
+  background-color: rgba(255, 34, 255, 0.3);
 }
