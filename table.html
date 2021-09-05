@@ -4,10 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="papita">
+    <meta name="robots" content="index, follow">
+    <meta name="description" content="Aquí encontrarás reseñas de los ">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
-    <title>Document</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/6e643b7659.js" crossorigin="anonymous"></script>
+    <title>Gamestore</title>
 </head>
 <body>
+      <header class="header">
+        <div class="header__imagen-div">
+            <i class="fas fa-gamepad header-icon"></i>
+            <h1 class="header__title">Gamestore</h1>
+        </div>
+        <nav class="menu">
+            <ul class="menu__lista">
+                <li class="menu__item">
+                    <a class="menu__link menu__link--tablas" href="table.html">Top Ventas</a>
+                </li>
+                <li class="menu__item">
+                    <a  class="menu__link menu__link--sandboxs" href="#sandbox">Sandboxs</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--shooters" href="#shooters">Shooters</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link menu__link--aventura" href="#aventura">Aventura</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-plegable__contenedor">
+            <details class="menu-plegable">
+                <summary>
+                    <i class="fas fa-user-astronaut menu-plegable__img"></i>
+                </summary>
+                <ul>
+                    <li class="menu__item"> <a class="menu-plegable__link" href="error404.html">Iniciar Sesión</a></li>
+                    <li class="menu__item"> <a class="menu-plegable__link" href="error404.html"> Cerrar Sesión </a> </li>
+                </ul>
+            </details>
+        </div>
+    </header>
+
+    <section class="buscador">
+        <h2 class="buscador__titulo">¿Qué quieres buscar?</h2>
+        <input placeholder="Buscar... " type="search" class="buscador__input" name="buscar" id="buscar">
+    </section>
+    
+    <main>
     <center>
         TOP VIDEO JUEGOS MAS POUPULARES
           <table border="2" width="50%" class="table" >
@@ -134,5 +183,15 @@
 
       </table>
   </center>
+  </main>
+  
+  <footer class="footer">
+    <ul class="footer__list-container">
+        <li><a class="footer__link" href="#">Términos y condiciones</a></li>
+        <li><a class="footer__link" href="#">Declaración de Privacidad</a></li>
+        <li><a class="footer__link" href="#">Centro de ayuda</a></li>
+    </ul>
+  </footer>
+
 </body>
 </html>
