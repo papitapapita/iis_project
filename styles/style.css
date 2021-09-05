@@ -334,3 +334,11 @@ a {
 .footer__link:visited {
   color: white;
 }
+
+.table__title{
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 0.7rem #ff6ec7, 0 0 1rem #ff6ec7, 0 0 2.1rem #ff6ec7,
+    0 0 4.2rem #ff22ff, 0 0 8.2rem #ff22ff, 0 0 9.2rem #ff22ff;
+}
+
