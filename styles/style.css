@@ -307,3 +307,26 @@ a {
 .carrusel-item__detalles:hover {
   opacity: 1;
 }
+
+.footer {
+  padding: 5rem;
+}
+
+.footer__list-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.footer__link {
+  margin-right: 2rem;
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.footer__link:visited {
+  color: white;
+}
