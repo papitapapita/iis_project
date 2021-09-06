@@ -67,14 +67,16 @@ a {
 .Titles__table,
 .content__table--num,
 .content__table--link,
-.footer__link {
+.footer__link,
+.main--404 {
   text-shadow: 0 0 0.7rem #ff6ec7, 0 0 1rem #ff6ec7, 0 0 2.1rem #ff6ec7,
     0 0 4.2rem #ff22ff, 0 0 8.2rem #ff22ff, 0 0 9.2rem #ff22ff;
 }
 
 .header-icon:hover,
 .header__title:hover,
-.menu-plegable__img:hover {
+.menu-plegable__img:hover,
+.icon-return:hover {
   color: #ffd6ef;
   cursor: pointer;
 }
@@ -91,7 +93,7 @@ a {
   font-family: "Architects Daughter", cursive;
 }
 
-.menu {
+.menu{
   align-items: center;
   font-size: 1.6rem;
   display: flex;
@@ -379,6 +381,7 @@ a {
   0 0 4.2rem #06ff06, 0 0 8.2rem #06ff06, 0 0 9.2rem #06ff06 ;
   font-size: 2rem;
   transition: 1ms; 
+  cursor: pointer;
 }
 
 .ref__link{
@@ -391,5 +394,22 @@ a {
   text-shadow: 0 0 0.7rem #F0F0F0, 0 0 0.1rem #F0F0F0, 0 0 1.1rem #F0F0F0,
   0 0 4.2rem #Fff, 0 0 8.2rem #fff, 0 0 9.2rem #fff ;
   font-size: 2rem;
-  transition: 1ms; 
+  transition: 1ms;
+  cursor: pointer; 
+}
+
+.header__return-lobby{
+  display: flex;
+  align-items: center;
+  font-size: 5rem;
+  display: flex;
+  justify-content: center;
+  width: 50%; 
+}
+
+.main--404{
+  align-items: center;
+  font-size: 8rem;
+  justify-content:center;
+  margin-top: 5rem;
 }
