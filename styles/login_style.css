@@ -1,0 +1,114 @@
+.login {
+  height: 88vh;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+}
+
+.login * {
+  color: white;
+}
+
+.login__container {
+  background-color: rgba(255, 34, 255, 0.05);
+  border: white 0.3rem solid;
+  border-radius: 3rem;
+  box-shadow: inset 0rem 0rem 1.7rem #ff6ec7, 0rem 0rem 0.7rem #ff6ec7,
+    0 0 1rem #ff6ec7, 0 0 2.1rem #ff6ec7, 0 0 1.7rem #ff22ff,
+    inset 0 0 1.7rem #ff22ff;
+  padding: 5rem;
+}
+
+.login__form {
+  display: flex;
+  flex-direction: column;
+}
+.login__main-title {
+  font-size: 2.2rem;
+  margin-bottom: 5rem;
+}
+
+.login__input {
+  background-color: transparent;
+  border: 0.2rem solid white;
+  border-radius: 1.4rem;
+  box-shadow: inset 0rem 0rem 1rem #ff6ec7, 0rem 0rem 0.7rem #ff6ec7,
+    0 0 1rem #ff6ec7, 0 0 1.5rem #ff6ec7, 0 0 1.2rem #ff22ff,
+    inset 0 0 1.7rem #ff22ff;
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  padding: 1rem 2rem;
+}
+
+.login__input::placeholder {
+  color: white;
+  font-weight: 100;
+}
+
+.login__input:focus {
+  outline: none;
+  background-color: rgba(255, 34, 255, 0.3);
+}
+
+.login__button {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 3rem;
+  cursor: pointer;
+  font-size: 1.6rem;
+  font-weight: 900;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  padding: 1.2rem 6rem;
+  text-align: center;
+}
+
+.login__button:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  text-decoration: none !important;
+}
+
+.login__button:active {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.login a {
+  font-weight: 800;
+}
+
+.login a:hover {
+  text-decoration: underline;
+}
+
+.login__remember-me {
+  align-items: center;
+  display: flex;
+  font-size: 1.23rem;
+  justify-content: space-between;
+  margin-bottom: 7rem;
+}
+
+.login__image {
+  margin-right: 1rem;
+  width: 2.4rem;
+}
+
+.image-container--login {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+}
+
+.login__label--recuerdame {
+  align-items: center;
+  display: flex;
+}
+
+.login__checkbox {
+  margin-right: 0.6rem;
+}
+
+.login__text--noaccount {
+  font-size: 1.3rem;
+  margin-top: 5rem;
+}
