@@ -63,13 +63,13 @@ a {
 .buscador__titulo,
 .buscador__input::placeholder,
 .carrusel__titulo,
-.ref__list-title,
+.referencias__title,
 .Titles__table,
 .content__table--num,
 .content__table--link,
-.footer__link,
 .login__main-title,
-.main--404 {
+.main--404,
+.footer * {
   text-shadow: 0 0 0.7rem #ff6ec7, 0 0 1rem #ff6ec7, 0 0 2.1rem #ff6ec7,
     0 0 4.2rem #ff22ff, 0 0 8.2rem #ff22ff, 0 0 9.2rem #ff22ff;
 }
@@ -208,7 +208,7 @@ a {
 }
 
 .carrusel__titulo,
-.ref__list-title {
+.referencias__title {
   font-size: 2rem;
   letter-spacing: 1rem;
   text-transform: uppercase;
@@ -264,8 +264,8 @@ a {
   transform: scale(1.5);
 }
 
-.carrusel-item:hover .carrusel-item:last-child:hover {
-  transform-origin: center left;
+.carrusel__contenedor:hover .carrusel-item:last-child:hover {
+  transform-origin: center right;
 }
 
 .carrusel-item__imagen {
@@ -322,6 +322,8 @@ a {
 
 .footer {
   padding: 5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .footer__list-container {
@@ -343,11 +345,31 @@ a {
   color: white;
 }
 
+.footer__author-section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__list-continer {
+  display: flex;
+  flex-direction: column;
+  list-style: disc;
+}
+
+.main-tablas {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 6rem;
+}
+
 .table__title {
   font-size: 2rem;
   text-transform: uppercase;
   text-shadow: 0 0 0.7rem #ff6ec7, 0 0 1rem #ff6ec7, 0 0 2.1rem #ff6ec7,
     0 0 4.2rem #ff22ff, 0 0 8.2rem #ff22ff, 0 0 9.2rem #ff22ff;
+  margin-bottom: 6rem;
 }
 
 .table {
@@ -356,6 +378,7 @@ a {
   border: 1rem;
   border-style: inset;
   border-color: #ff22ff #ff6ec7;
+  border-radius: 2rem;
   box-shadow: 0 0 0.5rem #ff6ec7, 0 0 1rem #ff6ec7, 0 0 1.1rem #ff6ec7,
     0 0 1.2rem #ff22ff, 0 0 4.2rem #ff22ff, 0 0 3.2rem #ff22ff;
 }
@@ -375,14 +398,30 @@ a {
 .content__table--link {
   text-align: center;
   font-size: 1.5rem;
+  transition: 400ms;
 }
 
 .content__table--link:hover {
   text-shadow: 0 0 0.7rem #1fff1f, 0 0 1rem #1fff1f, 0 0 2.1rem #1fff1f,
     0 0 4.2rem #06ff06, 0 0 8.2rem #06ff06, 0 0 9.2rem #06ff06;
-  font-size: 2rem;
-  transition: 1ms;
+  transform: scale(1.25);
   cursor: pointer;
+}
+
+.referencias {
+  padding-top: 7rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.referencias-contenedor {
+  width: 70%;
+}
+
+.ref__list-container li {
+  list-style: inside;
+  margin-top: 2rem;
 }
 
 .ref__link {
@@ -397,20 +436,4 @@ a {
   font-size: 2rem;
   transition: 1ms;
   cursor: pointer;
-}
-
-.header__return-lobby {
-  display: flex;
-  align-items: center;
-  font-size: 5rem;
-  display: flex;
-  justify-content: center;
-  width: 50%;
-}
-
-.main--404 {
-  align-items: center;
-  font-size: 8rem;
-  justify-content: center;
-  margin-top: 5rem;
 }
