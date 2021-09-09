@@ -109,6 +109,7 @@
 }
 
 .login__text--noaccount {
+  text-align: center;
   font-size: 1.3rem;
   margin-top: 5rem;
 }
